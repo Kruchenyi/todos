@@ -1,0 +1,192 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Nova+Round&display=swap");
+
+body {
+  font-family: "Nova Round", cursive;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+.wrap {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -webkit-linear-gradient(90deg, #b3a2b9, #1181a7);
+  background: linear-gradient(90deg, #b3a2b9, #1181a7);
+}
+.block {
+  background: #fff;
+  padding: 40px 60px;
+  border-radius: 15px;
+  text-align: center;
+  width: 1000px;
+  &__title {
+    font-size: 44px;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 30px;
+  }
+  &__form {
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 10px;
+    background-color: rgb(183, 172, 245);
+    color: #fff;
+    font-size: 24px;
+  }
+  &__button {
+    background: #1181a7;
+    font-size: 40px;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 10px;
+  }
+}
+
+.todo {
+  border: 1px solid black;
+  text-align: left;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: rgb(183, 172, 245);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-wrap {
+  display: flex;
+  column-gap: 5px;
+}
+
+.btn__todo {
+  background: #1181a7;
+  font-size: 25px;
+  color: #fff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 50px;
+}
+
+.status {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+.filter {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 20px;
+  &__btn {
+    flex: 0 1 150px;
+    background: #1181a7;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 0;
+    border-radius: 15px;
+  }
+}
+.change {
+  border: 1px solid black;
+  height: 10px;
+}
